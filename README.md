@@ -1,35 +1,52 @@
-# OWID-Energy-data
-This project leverages the Our World in Data (OWID) energy dataset to analyze global energy trends and build predictive models for sustainable resource planning.
-# 🌍 OWID Energy Data Project
+# 🌍 OWID Energy Data Analysis
 
-This repository explores the **Our World in Data (OWID) Energy Dataset**, focusing on data cleaning, preprocessing, and manipulation using Python. The project aims to uncover insights into global energy consumption and production trends, with future extensions planned for SQL-based querying and machine learning modeling.
-
----
-
-## 📌 Current Progress
-- ✅ **Data Cleaning & Preprocessing**  
-  - Handled missing values, duplicates, and inconsistent formats  
-  - Standardized column names and data types  
-  - Filtered relevant energy-related features for analysis  
-
-- ✅ **Data Manipulation**  
-  - Aggregated energy consumption by country and year  
-  - Created derived metrics (e.g., renewable share, fossil fuel dependency)  
-  - Applied grouping and pivoting for structured analysis  
-
-- 🚧 **Upcoming Work**  
-  - SQL integration for advanced querying  
-  - Machine learning models for forecasting and classification  
-  - Interactive dashboards for visualization  
+## 📌 Project Overview
+This project focuses on analyzing **Our World in Data (OWID) Energy Dataset**.  
+The workflow includes **data cleaning, SQL-based manipulations, and interactive visualizations**.  
+The final dashboards are published on **Tableau Public** for easy access and sharing.
 
 ---
 
-## 🛠️ Tech Stack
-- **Languages**: Python (Pandas, NumPy)  
-- **Visualization**: Matplotlib, Seaborn (basic plots for cleaned data)  
-- **Planned Additions**: SQL, Scikit-learn, Power BI/Tableau  
+## ⚙️ Tech Stack & Tools
+- **Jupyter Notebook** → Data cleaning & preprocessing  
+- **MS SQL Server** → SQL queries & manipulations (connected via Jupyter)  
+- **Python Libraries** → Pandas, NumPy for data handling  
+- **Tableau Desktop** → Visualization & dashboard creation  
+- **Tableau Public** → Publishing interactive dashboards  
 
 ---
 
-## 📂 Project Structure
+## 🛠️ Process Workflow
+
+### 1. Data Collection
+- Source: **Our World in Data (OWID) Energy Dataset**
+- Format: CSV files containing global energy statistics
+
+### 2. Data Cleaning (Jupyter Notebook)
+- Removed duplicates and null values
+- Standardized column names
+- Handled missing values using imputation techniques
+- Converted data types for consistency
+
+### 3. SQL Manipulations (MS SQL Server via Jupyter)
+- Connected Jupyter to **MS SQL Server**
+- Created tables and imported cleaned data
+- Performed queries for:
+  - Aggregations (SUM, AVG, MAX, MIN)
+  - Joins across multiple tables
+  - Rolling window calculations
+  - Trend analysis over time
+
+### 4. Visualization (Tableau)
+- Designed dashboards with:
+  - **Energy consumption trends**
+  - **Renewable vs Non-renewable breakdown**
+  - **Country-wise comparisons**
+  - **Year-over-year growth analysis**
+- Published dashboards on **Tableau Public**
+
+---
+
+
+## 📂 Repository Structure
 
